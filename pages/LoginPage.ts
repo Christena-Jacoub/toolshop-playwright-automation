@@ -13,6 +13,7 @@ export class LoginPage{
         this.passwordTB=page.getByLabel("Password *");
         this.loginBtn=page.getByRole("button", {name: "Login"});
         this.pageTitleTxt =page.getByText("My account");
+        
     }
 
 
@@ -22,5 +23,8 @@ export class LoginPage{
         await this.loginBtn.click();
     }
 
+    errorMsgLocator(msg:string){
+        return this.page.getByText(msg);
+    }
 
 }
