@@ -1,0 +1,6 @@
+{
+    "testName": "Valid Credentials",
+    "email": "chris.qa.test1@gmail.com",
+    "password": "Test@8282",
+    "expectedResult": "success"
+}
