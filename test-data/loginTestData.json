@@ -1,0 +1,44 @@
+[
+    {
+        "testName": "Valid Credentials",
+        "email": "chris.qa.test1@gmail.com",
+        "password": "Test@8282",
+        "expectedResult": "success"
+    },
+    {
+        "testName": "Incorrect Password",
+        "email": "chris.qa.test1@gmail.com",
+        "password": "Test@82",
+        "expectedResult": "failure",
+        "errorMsg": "Invalid email or password"
+    },
+    {
+        "testName": "Incorrect Email",
+        "email": "chris.qa.test@gmail.com",
+        "password": "Test@8282",
+        "expectedResult": "failure",
+        "errorMsg": "Invalid email or password"
+    },
+    {
+        "testName": "Invalid Email format",
+        "email": "chris.qa.test@@gmail.com",
+        "password": "Test@8282",
+        "expectedResult": "failure",
+        "errorMsg": "Email format is invalid"
+    },
+
+    {
+        "testName": "Empty Password",
+        "email": "chris.qa.test@@gmail.com",
+        "password": "",
+        "expectedResult": "failure",
+        "errorMsg": "Password is required"
+    },
+    {
+        "testName": "Empty Email",
+        "email": "",
+        "password": "Test@8282",
+        "expectedResult": "failure",
+        "errorMsg": "Email is required"
+    }
+]
