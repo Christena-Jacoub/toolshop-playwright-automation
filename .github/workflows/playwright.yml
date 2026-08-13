@@ -25,6 +25,8 @@ jobs:
     ## Run Playwright tests using Azure Playwright Workspaces
     - name: Run Playwright tests
       env:
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
           PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }} 
       run: npx playwright test --config=playwright.service.config.ts --workers=4
 
