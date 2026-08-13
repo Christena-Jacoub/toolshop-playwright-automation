@@ -18,8 +18,7 @@ test.beforeEach(async ({ poManager }) => {
 
 for (const loginTestData of loginTestDataSet) {
     test(`Login with ${loginTestData.testName}`, async ({ page }) => {
-        console.log(process.env.BASE_URL! + "auth/login");
-        await page.goto(process.env.BASE_URL! + "auth/login");
+        await page.goto("auth/login");
         await loginPage.userLogin(loginTestData.email, loginTestData.password);
         if (loginTestData.expectedResult === "success")
             await expect(loginPage.pageTitleTxt).toBeVisible();
@@ -35,7 +34,7 @@ test.describe('Authentication session tests', () => {
 
         if (!validUser) throw new Error("Valid user test data not found");
 
-        await page.goto(process.env.BASE_URL! + "auth/login");
+        await page.goto("auth/login");
         await loginPage.userLogin(validUser.email, validUser.password);
         await expect(loginPage.pageTitleTxt).toBeVisible();
     });
@@ -47,12 +46,12 @@ test.describe('Authentication session tests', () => {
         expect(page.url()).toContain("account");
     });
 
-    test('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
+    test.only('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
 
         //sign out
         await mainMenu.Logout();
         // navigate to the account and check the site should be navigated to login
-        await page.goto(process.env.BASE_URL! + "account/profile");
+        await page.goto("account/profile");
         await expect(page).toHaveURL(/auth\/login/);
     });
 })
