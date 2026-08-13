@@ -12,7 +12,7 @@ export class LoginPage{
         this.emailTB= page.getByLabel( "Email address *");
         this.passwordTB=page.getByLabel("Password *");
         this.loginBtn=page.getByRole("button", {name: "Login"});
-        this.pageTitleTxt =page.getByText("My account");
+        this.pageTitleTxt =page.getByText("My account").last();
         
     }
 
