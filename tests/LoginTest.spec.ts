@@ -46,7 +46,7 @@ test.describe('Authentication session tests', () => {
         expect(page.url()).toContain("account");
     });
 
-    test.only('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
+    test('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
 
         //sign out
         await mainMenu.Logout();
