@@ -31,7 +31,7 @@ test.beforeEach(async ({ poManager }) => {
 })
 
 
-test.only('Login with Valid credentials', async ({ page }) => {
+test('Login with Valid credentials', async ({ page }) => {
     await page.goto("auth/login");
     await loginPage.userLogin(email, password);
 
@@ -39,7 +39,7 @@ test.only('Login with Valid credentials', async ({ page }) => {
 })
 
 for (const loginTestData of loginTestDataSet) {
-    test.only(`Login with ${loginTestData.testName}`, async ({ page }) => {
+    test(`Login with ${loginTestData.testName}`, async ({ page }) => {
         await page.goto("auth/login");
         await loginPage.userLogin(loginTestData.email, loginTestData.password);
         await expect(loginPage.errorMsgLocator(loginTestData.errorMsg!)).toBeVisible();
@@ -48,12 +48,8 @@ for (const loginTestData of loginTestDataSet) {
 
 test.describe('Authentication session tests', () => {
     test.beforeEach(async ({ page }) => {
-        const validUser = loginTestDataSet.find(data => data.testName === "Valid Credentials");
-
-        if (!validUser) throw new Error("Valid user test data not found");
-
         await page.goto("auth/login");
-        await loginPage.userLogin(validUser.email, validUser.password);
+        await loginPage.userLogin(email, password);
         await expect(loginPage.pageTitleTxt).toBeVisible();
     });
 
