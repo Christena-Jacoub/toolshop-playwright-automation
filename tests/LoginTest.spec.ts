@@ -41,13 +41,13 @@ test.describe('Authentication session tests', () => {
     });
 
 
-    test.only('SSQA- 131 Session persist after reload', async ({ page }) => {
+    test('SSQA- 131 Session persist after reload', async ({ page }) => {
 
         await page.reload();
         expect(page.url()).toContain("account");
     });
 
-    test.only('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
+    test('SSQA-183 Unauthorized Protected Page', async ({ page }) => {
 
         //sign out
         await mainMenu.Logout();
