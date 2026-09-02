@@ -1,0 +1,15 @@
+[    2493ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    2993ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
+[    2996ms] [ERROR] ERROR {message: Unauthorized} @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[   55245ms] [ERROR] ERROR Error: The inspected token doesn't appear to be a JWT. Check to make sure it has three parts and see https://jwt.io for more.
+    at r._decodeToken (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:1562)
+    at r.decodeToken (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:1463)
+    at r._getTokenExpirationDate (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:1989)
+    at r.getTokenExpirationDate (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:1919)
+    at r._isTokenExpired (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:2280)
+    at r.isTokenExpired (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:2204)
+    at r.isLoggedIn (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:4191)
+    at r.getRole (https://practicesoftwaretesting.com/chunk-UNSX63UG.js:1:3722)
+    at s.ngOnInit (https://practicesoftwaretesting.com/main-7N2Z4BTD.js:1:6155)
+    at pg (https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:7:18166) @ https://practicesoftwaretesting.com/chunk-JBAH3FYV.js:6
+[   55807ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://api.practicesoftwaretesting.com/users/me:0
