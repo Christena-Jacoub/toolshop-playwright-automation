@@ -1,0 +1,99 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - text: View the
+    - link "Documentation" [ref=e4] [cursor=pointer]:
+      - /url: https://testsmith-io.github.io/practice-software-testing/#/
+    - text: for this application.
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: Practice Black Box Testing & Bug Hunting
+      - button "Testing Guide" [ref=e9] [cursor=pointer]
+      - button "🐛 Bug Hunting" [ref=e10] [cursor=pointer]
+    - navigation [ref=e11]:
+      - generic [ref=e12]:
+        - link "Practice Software Testing - Toolshop" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e32]:
+          - menubar "Main menu" [ref=e33]:
+            - menuitem [ref=e34]:
+              - link "Home" [ref=e35] [cursor=pointer]:
+                - /url: /
+            - menuitem [ref=e36]:
+              - button "Categories" [ref=e37] [cursor=pointer]
+            - menuitem [ref=e38]:
+              - link "Contact" [ref=e39] [cursor=pointer]:
+                - /url: /contact
+            - menuitem [ref=e40]:
+              - link "Sign in" [ref=e41] [cursor=pointer]:
+                - /url: /auth/login
+          - button "Select language" [ref=e43] [cursor=pointer]: EN
+  - generic [ref=e48]:
+    - generic [ref=e49]:
+      - paragraph [ref=e50]:
+        - img "Banner" [ref=e51]
+      - separator [ref=e52]
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - heading [level=4] [ref=e55]
+        - separator [ref=e59]
+        - combobox "sort" [ref=e62]:
+          - option [selected]
+          - option "Name (A - Z)"
+          - option "Name (Z - A)"
+          - option "Price (High - Low)"
+          - option "Price (Low - High)"
+          - option "CO₂ Rating (A - E)"
+          - option "CO₂ Rating (E - A)"
+        - heading [level=4] [ref=e63]
+        - separator [ref=e67]
+        - generic "ngx-slider" [ref=e69]:
+          - slider "ngx-slider" [ref=e74] [cursor=pointer]
+          - slider "ngx-slider-max" [ref=e75] [cursor=pointer]
+          - generic [ref=e76]: "0"
+          - generic [ref=e77]: "200"
+          - generic [ref=e78]: "1"
+          - generic [ref=e79]: "100"
+        - heading [level=4] [ref=e81]
+        - separator [ref=e85]
+        - generic [ref=e87]:
+          - generic [ref=e88]: Search
+          - textbox "Search" [ref=e89]
+          - button "X" [ref=e90] [cursor=pointer]
+          - button "Search" [ref=e91] [cursor=pointer]
+        - heading [level=4] [ref=e92]
+        - separator [ref=e96]
+        - heading "By category:" [level=4] [ref=e97]
+        - group "Categories"
+        - heading "By brand:" [level=4] [ref=e100]
+        - group "Brands"
+        - heading "Sustainability:" [level=4] [ref=e103]
+        - group "Eco-Friendly Products" [ref=e104]:
+          - generic [ref=e107]:
+            - checkbox "Show only eco-friendly products" [ref=e108]
+            - text: Show only eco-friendly products
+      - generic [ref=e110]:
+        - heading [level=5] [ref=e114]
+        - heading [level=5] [ref=e120]
+        - heading [level=5] [ref=e126]
+        - heading [level=5] [ref=e132]
+        - heading [level=5] [ref=e138]
+        - heading [level=5] [ref=e144]
+        - heading [level=5] [ref=e150]
+        - heading [level=5] [ref=e156]
+  - contentinfo [ref=e160]:
+    - generic [ref=e161]:
+      - text: This is a DEMO application (
+      - link "GitHub repo" [ref=e162] [cursor=pointer]:
+        - /url: https://github.com/testsmith-io/practice-software-testing
+      - text: ), used for software testing training purpose. |
+      - link "Privacy Policy" [ref=e163] [cursor=pointer]:
+        - /url: /privacy
+      - text: "| Banner photo by"
+      - link "Barn Images" [ref=e164] [cursor=pointer]:
+        - /url: https://unsplash.com/@barnimages
+      - text: "on"
+      - link "Unsplash" [ref=e165] [cursor=pointer]:
+        - /url: https://unsplash.com/photos/t5YUoHW6zRo
+      - text: .
+    - generic [ref=e166]: v2.4 | Built 2026-08-14 | Angular 20.0.5
+  - button "Open chat" [ref=e168] [cursor=pointer]

@@ -23,7 +23,7 @@ export class LoginPage{
         await this.loginBtn.click();
     }
 
-    errorMsgLocator(msg:string){
+    errorMsgLocator(msg:string):Locator{
         return this.page.getByText(msg);
     }
 

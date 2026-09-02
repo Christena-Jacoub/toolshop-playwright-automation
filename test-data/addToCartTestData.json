@@ -1,0 +1,21 @@
+[
+    {
+        "productName": "Pliers",
+        "price": 12.01,
+        "quantity": 2,
+        "newQuantity": 10
+    },
+
+    {
+        "productName": "Bolt Cutters",
+        "price": 48.41,
+        "quantity": 2,
+        "newQuantity": 1
+    },
+    {
+        "productName": "Claw Hammer",
+        "price": 11.48,
+        "quantity": 2,
+        "newQuantity": 99
+    }
+]
