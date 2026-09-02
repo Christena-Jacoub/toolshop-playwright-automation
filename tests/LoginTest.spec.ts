@@ -29,7 +29,7 @@ test.beforeEach(async ({ poManager }) => {
 })
 
 
-test('Login with Valid credentials', async ({ page }) => {
+test('@cloudBlock Login with Valid credentials', async ({ page }) => {
     await page.goto("auth/login");
     await loginPage.userLogin(email, password);
 
@@ -44,7 +44,7 @@ for (const loginTestData of loginTestDataSet) {
     })
 }
 
-test.describe('Authentication session tests', () => {
+test.describe('@cloudBlock Authentication session tests', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto("auth/login");
         await loginPage.userLogin(email, password);
